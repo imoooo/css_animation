@@ -1,0 +1,61 @@
+body {
+    box-sizing: border-box;
+    font-size: sans-serif;
+    margin: 0;
+    color: #fff;
+}
+
+.section {
+    background: #f2395a;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 1000px;
+}
+.section:hover .phone, 
+.section:hover .tablet,
+.section:hover .desktop {
+    transform: translateY(-30px) rotateY(-15deg);
+}
+
+.phone, .tablet, .desktop {
+    background: #fff;
+    box-shadow: 13px 13px 32px 0 rgba(242, 57, 90, 0.3);
+    position: absolute;
+    transition: 1s;
+    transform: translateY(100%);
+}
+
+.phone {
+    width: 200px;
+    height: 280px;
+    left: 5%;
+    bottom: 0;
+    background: #fff url('https://i.ibb.co/6Bh6DvW/phone.png') center no-repeat;
+    z-index: 3;
+    transition-delay: 0.2s;
+}
+.tablet {
+    width: 360px;
+    height: 380px;
+    left: 10%;
+    bottom: 0;
+    background: #fff url('https://i.ibb.co/M9WbGgz/tablet.png') center no-repeat;
+    z-index: 1;
+    transition-delay: 0.4s;
+}
+.desktop {
+    width: 680px;
+    height: 480px;
+    left: 15%;
+    bottom: 0;
+    background: #fff url('https://i.ibb.co/WV8j1SD/desktop.png') center no-repeat;
+    transition-delay: 0.6s;
+}
+
+.heading {
+    margin-left: 50%;
+}
+
